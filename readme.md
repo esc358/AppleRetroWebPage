@@ -1,6 +1,6 @@
 # Webpage for Apple Retro
 
-## Site Hosted
+## Deployment
 
 [Apple Retro Website](https://esc358.github.io/AppleRetroWebPage/index.html).
 
