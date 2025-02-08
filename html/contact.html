@@ -1,0 +1,69 @@
+<!--Specify the document as an HTML5 and lets know the browser how to interpret it -->
+<!DOCTYPE html>
+<!-- Defines language English Canadian-->
+<html lang="en-CA">
+  <!-- head collects metadata, and title -->
+  <head>
+    <!-- meta charset attribute specifies characters almost all characters in the world should be the first one in the head-->
+    <meta charset="UTF-8">
+    <!-- meta tag for responsive design in multiple displays-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta tag description for Search engine optimization a brief description of the website-->
+    <meta name="description" content="Final Project: The retro micro site">
+    <!-- meta tag defines author for website-->
+    <meta name="author" content="Emilio Conde">
+    <!--meta tag speaks to search engines, application hidden and no indexed -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Tittle of the wbesite -->
+    <title>Apple II-Contact</title>
+    <!-- font for the paragraphs -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Link CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <!-- Link JS sheet -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/design.js"></script>
+  </head>
+  <body>
+    <!--Header for the website logo and navigation-->
+    <header id="navigation-inner" class="navigation"></header>
+    <main>
+      <!-- contact section -->
+      <section class="contact">
+        <!-- div contains the form -->
+        <div class="form">
+          <!-- form element with no action contains customer and order info -->
+          <form action="#">
+          <h2>Contact Us: </h2>
+            <!-- input for text -->
+            <div>
+              <label for="name">Name*</label>
+              <p><input required type="text" id="name" name="name"></p>
+            </div>
+            <!-- input type email -->
+            <div>
+              <label for="email">Email*</label>
+              <p><input required type="email" id="email" name="email"></p>
+            </div>
+            <!-- input number required -->
+            <div>
+              <label for="phone">Phone Number*</label>
+              <p><input required type="tel" id="phone" name="phone"></p>
+            </div>
+            <!-- input text area -->
+            <div>
+              <br><label for="addcomments">Comments or Questions</label><br>
+              <br><textarea placeholder="Add comments" id="addcomments" rows="8" cols="80"></textarea>
+            </div>
+            <!-- input button -->
+            <div>
+              <input type="Submit" value="SEND">
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

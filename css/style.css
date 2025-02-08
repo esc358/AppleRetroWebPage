@@ -1,0 +1,519 @@
+/** style for headers paragraphs and links **/
+h1, h2, h3, a, p
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/** grid design for the body **/
+body
+{
+  background-color: white;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header header header header"
+  "main main main main"
+  "footer footer footer footer"
+}
+
+/** navigation layout **/
+.navigation
+{
+  margin: 0;
+  display: flex;
+  grid-area: header;
+  height: 130px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+/** navigation div img **/
+.navigation > div
+{
+  height: 125px;
+  width: auto;
+  flex-grow: 1;
+}
+
+/** img position **/
+.navigation > div > a > img
+{
+  height: 100%;
+  width: auto;
+}
+
+/** navigations layout **/
+.navigation > nav > ul
+{
+  padding: 25px;
+  display: flex;
+  list-style: none;
+}
+
+/** navigations layout **/
+.navigation > nav > ul > li
+{
+  padding: 0px 20px;
+}
+
+/** navigation text **/
+.navigation > nav > ul > li > a
+{
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/** navigation text hover**/
+.navigation > nav > ul >li>a:hover
+{
+  background-color: #17569b;
+  color: white;
+}
+
+/** banner of website set upt img **/
+.banner
+{
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+/** set grid area**/
+main
+{
+  margin-top: 0%;
+  grid-area: main;
+}
+
+/**section one website**/
+.home
+{
+  display: grid;
+  padding: 5% 0 5% 0;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  grid-row-gap: 40px;
+  justify-content: center;
+}
+
+/**image for row one**/
+.home > div:nth-child(1) > img
+{
+  height: auto;
+  width: 60%;
+  margin-left: 100px;
+}
+
+/**padding for text**/
+.home > div:nth-child(2)
+{
+  padding-top: 20%;
+  margin-left: 20px;
+}
+
+/** text size for title **/
+.home > div:nth-child(2) > h2
+{
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/** paragraph size **/
+.home > div:nth-child(2) > p
+{
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+/** reorganize the divs  **/
+.home > div:nth-child(1) {order: 1;}
+.row-one > div:nth-child(2) {order: 2;}
+
+/** aboutus section **/
+.aboutus
+{
+  border-top-width: 100px;
+  margin-top: 140px;
+  height: 400px;
+  display: grid;
+  padding: 5% 6% 5% 6%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  justify-content: center;
+  column-gap: 35px;
+  text-align: center;
+}
+
+/** about us image **/
+.aboutus > div:nth-child(1) > img
+{
+  width: 100%;
+  height: auto;
+}
+
+/** about us padding **/
+.aboutus > div:nth-child(2)
+{
+  padding-top: 100px;
+}
+
+/** about us title size **/
+.aboutus > div:nth-child(2) > h2
+{
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+/** product container **/
+.product
+{
+  border-top-width: 100px;
+  margin-top: 140px;
+  height: 400px;
+  display: grid;
+  padding: 5% 6% 5% 6%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  justify-content: center;
+  column-gap: 5%;
+  text-align: center;
+}
+
+/** product image **/
+.product > div > img
+{
+  width: 50%;
+  height: 50%;
+}
+
+/** contact container**/
+.contact
+{
+  border-top-width: 100px;
+  margin-top: 140px;
+  height: 700px;
+  display: grid;
+  padding: 0% 6% 5% 6%;
+  grid-template-rows: auto;
+  justify-content: center;
+  column-gap: 5%;
+  text-align: center;
+}
+
+/** form container**/
+.form{
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/** input form text**/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(9, 9, 9);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/** input form email**/
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(9, 9, 9);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/** input form telef**/
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(9, 9, 9);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/** input form submit**/
+input[type=submit] {
+    background-color: rgb(219, 31, 31);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/** footer layout **/
+footer
+{
+  grid-area: footer;
+  display: grid;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+/** footer text **/
+footer > h4
+{
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+}
+
+/** responsive design orientation portrait**/
+@media screen and (orientation: portrait)
+{
+  body
+  {
+    background-color: white;
+  }
+}
+
+/** responsive desing following size **/
+@media screen and (min-width: 600px) and (max-width: 950px)
+{
+  /** color **/
+  body
+  {
+    background-color: white;
+  }
+
+  /** style **/
+  .navigation
+  {
+    justify-content: center;
+    min-height: 200px;
+  }
+
+  /** style **/
+  .navigation > div
+  {
+    margin-left: 10px;
+  }
+
+  /** banner **/
+  .banner
+  {
+    background-position: bottom;
+    background-size: contain;
+    height: 550px;
+  }
+
+  /** banner mainhead **/
+  .banner > div
+  {
+    width: 60%;
+    height: 20%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /** home **/
+  .home
+  {
+    grid-template-columns: repeat(1, 100%);
+    padding: 4%;
+  }
+
+  /** home padding **/
+  .home > div:nth-child(1)
+  {
+    margin-left: 60px;
+  }
+
+  /** home padding **/
+  .home > div:nth-child(2)
+  {
+    padding-top: 30px;
+  }
+
+  /** text size **/
+  .home > div:nth-child(2) > h2
+  {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+  }
+
+  /** text size paragraph **/
+  .home > div:nth-child(2) > p
+  {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  /** footer**/
+  footer
+  {
+    text-align: center;
+  }
+
+  footer > h4
+  {
+    text-align: 30px;
+  }
+}
+
+/** Responsive desing folowing size**/
+@media screen and (min-width: 360px) and (max-width: 600px)
+{
+  /** body color**/
+  body
+  {
+    background-color: white;
+    margin: 0px;
+  }
+
+  /** navigation grid**/
+  .navigation
+  {
+    height: 120px;
+  }
+
+  /**navigation div**/
+  .navigation > div
+  {
+    display: grid;
+  }
+
+  /** navigation img**/
+  .navigation > div > a > img
+  {
+    margin: 20px auto 10px auto;
+    width: auto;
+    height: 90px;
+    justify-content: center;
+  }
+
+  /** nav navigation**/
+  .navigation > nav
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /** nav ul**/
+  .navigation > nav > ul
+  {
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /** nav ul**/
+  .navigation > nav > ul>li
+  {
+    padding: 0px;
+    border: 0;
+  }
+
+  /** header text size**/
+  .navigation > nav > ul > li > a
+  {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /** banner img position**/
+  .banner
+  {
+    background-size: contain;
+    height: 300px;
+    background-position: bottom;
+  }
+
+  /** home section**/
+  .home
+  {
+    grid-template-columns: repeat(1, 100%);
+    padding: 4%;
+    grid-row-gap: 0;
+  }
+
+  /** home child**/
+  .home> div:nth-child(1)>img
+  {
+    margin-left: 70px;
+  }
+
+  /** padding div child**/
+  .home > div:nth-child(2)
+  {
+    padding-bottom: 25px;
+    padding-top: 0%;
+  }
+
+  /** text size**/
+  .home > div:nth-child(2) > h2
+  {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0;
+  }
+
+  /** text size**/
+  .home > div:nth-child(2) > p
+  {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /**aboutus**/
+  .aboutus
+  {
+    grid-template-columns: none;
+    padding: 0% 10% 20% 10%;
+  }
+
+
+  /**resize padding**/
+  .aboutus > div:nth-child(2)
+  {
+    padding-top: 20px;
+  }
+
+  /**product **/
+  .product{
+    grid-template-columns: none;
+    height: 900px;
+  }
+
+  /**footer**/
+  footer
+  {
+    text-align: center;
+    height: auto;
+  }
+
+  /**text size**/
+  footer >  h4
+  {
+    font-size: 15px;
+  }
+}

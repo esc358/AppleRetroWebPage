@@ -1,0 +1,50 @@
+<!--Specify the document as an HTML5 and lets know the browser how to interpret it -->
+<!DOCTYPE html>
+<!-- Defines language English Canadian-->
+<html lang="en-CA">
+  <!-- head collects metadata, and title -->
+  <head>
+    <!-- meta charset attribute specifies characters almost all characters in the world should be the first one in the head-->
+    <meta charset="UTF-8">
+    <!-- meta tag for responsive design in multiple displays-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta tag description for Search engine optimization a brief description of the website-->
+    <meta name="description" content="Final Project: The retro micro site">
+    <!-- meta tag defines author for website-->
+    <meta name="author" content="Emilio Conde">
+    <!--meta tag speaks to search engines, application hidden and no indexed -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Tittle of the wbesite -->
+    <title>Apple II-Product</title>
+    <!-- font for the paragraphs -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Link CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <!-- Link JS sheet -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/design.js"></script>
+  </head>
+  <body>
+    <!--Header for the website logo and navigation-->
+    <header id="navigation-inner" class="navigation"></header>
+    <main>
+      <!--product section-->
+      <section class="product">
+        <!--apple 2 computer-->
+        <div>
+          <img src="../img/apple2.jpg" alt="contains an image of the apple 2 computer">
+          <p><em>Apple II</em></p>
+          <p>Taking advantage of the way the 6502 processor accesses memory. Video generation circuitry memory access on the otherwise unused phase avoids memory contention issues and interruptions of the video stream.</p>
+        </div>
+        <!--apple 2+ computer-->
+        <div>
+          <img src="../img/apple2+.jpg" alt="contains an image of the apple 2+ computer">
+          <p><em>Apple II +</em></p>
+          <p>Includes the Applesoft BASIC programming language in ROM. Supports floating-point arithmetic. Improved graphics and disk-booting support in the ROM. Full 48k of memory already installed.</p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
