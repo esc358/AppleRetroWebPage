@@ -1,5 +1,14 @@
 # Project Readme
 
+## Site Hosted
+
+[Apple Retro Website](https://esc358.github.io/AppleRetroWebPage/index.html).
+
+## How to Run the Project
+
+1. Clone the repository to your local machine.
+2. Open `index.html` in a web browser to view the website.
+
 ## Project Overview
 
 This project is made of the HTML, CSS, and JavaScript. The project demonstrates the use of web development technologies to create a functional and visually appealing website using Apple from the 80's.
@@ -37,11 +46,6 @@ The main JavaScript file that contains the functionality for the website. It inc
 ### images/
 
 This directory contains image assets used in the website, such as the logo and banner images.
-
-## How to Run the Project
-
-1. Clone the repository to your local machine.
-2. Open `index.html` in a web browser to view the website.
 
 ## Author
 
